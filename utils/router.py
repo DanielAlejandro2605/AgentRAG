@@ -9,8 +9,6 @@ from llama_index.core.query_engine.router_query_engine import RouterQueryEngine
 from llama_index.core.selectors import LLMSingleSelector
 
 
-
-
 def get_router_query_engine(file_path: str, llm = None, embed_model = None):
     """Get router query engine."""
     llm = llm or OpenAI(model="gpt-3.5-turbo")
